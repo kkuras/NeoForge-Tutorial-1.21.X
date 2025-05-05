@@ -1,7 +1,7 @@
 package net.kkura.tutorialmod.block;
 
-import com.mojang.blaze3d.shaders.Uniform;
 import net.kkura.tutorialmod.TutorialMod;
+import net.kkura.tutorialmod.block.custom.ControlerBlock;
 import net.kkura.tutorialmod.block.custom.MagicBlock;
 import net.kkura.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -33,6 +33,8 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> CONTROLER = registerBlock("controler",
+            () -> new ControlerBlock(BlockBehaviour.Properties.of().strength(5.0f).requiresCorrectToolForDrops()));
 
 
 
