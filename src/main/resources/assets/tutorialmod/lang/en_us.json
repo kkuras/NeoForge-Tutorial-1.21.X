@@ -15,5 +15,12 @@
   "block.tutorialmod.controler": "Controler",
 
   "creativetab.tutorialmod.bismuth_items": "Bismuth Items",
-  "creativetab.tutorialmod.bismuth_blocks": "Bismuth Blocks"
+  "creativetab.tutorialmod.bismuth_blocks": "Bismuth Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This block is very §9MAGICAL§r",
+
+  "tooltip.tutorialmod.chisel.shift_down": "This Item can chisel into to bricks",
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information",
+
+  "tooltip.tutorialmod.radish.tooltip": "Tastes really great!"
 }
