@@ -1,6 +1,7 @@
 package net.kkura.tutorialmod.block;
 
 import net.kkura.tutorialmod.TutorialMod;
+import net.kkura.tutorialmod.block.custom.BismuthLampBlock;
 import net.kkura.tutorialmod.block.custom.ControlerBlock;
 import net.kkura.tutorialmod.block.custom.MagicBlock;
 import net.kkura.tutorialmod.item.ModItems;
@@ -60,6 +61,9 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> BISMUTH_TRAPDOOR = registerBlock("bismuth_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
+            () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0)));
 
 
 
