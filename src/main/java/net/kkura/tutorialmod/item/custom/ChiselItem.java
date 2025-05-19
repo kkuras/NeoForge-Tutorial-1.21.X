@@ -1,6 +1,7 @@
 package net.kkura.tutorialmod.item.custom;
 
 import net.kkura.tutorialmod.block.ModBlocks;
+import net.kkura.tutorialmod.component.ModDataComponents;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.network.chat.Component;
@@ -49,6 +50,8 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, context.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                context.getItemInHand().set(ModDataComponents.COORDINATES, context.getClickedPos());
             }
         }
 
@@ -61,6 +64,10 @@ public class ChiselItem extends Item {
             tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel.shift_down"));
         } else {
             tooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+        if(stack.get(ModDataComponents.COORDINATES) != null) {
+            tooltipComponents.add(Component.literal("Last Block changed at " + stack.get(ModDataComponents.COORDINATES)));
         }
 
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
