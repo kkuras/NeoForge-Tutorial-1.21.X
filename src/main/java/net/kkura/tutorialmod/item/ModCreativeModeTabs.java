@@ -23,10 +23,18 @@ public class ModCreativeModeTabs {
                      .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
+
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.RADISH);
+
                         output.accept(ModItems.FROSTFIRE_ICE);
                         output.accept(ModItems.STARLIGHT_ASHES);
+
+                        output.accept(ModItems.BISMUTH_SWORD);
+                        output.accept(ModItems.BISMUTH_PICKAXE);
+                        output.accept(ModItems.BISMUTH_SHOVEL);
+                        output.accept(ModItems.BISMUTH_AXE);
+                        output.accept(ModItems.BISMUTH_HOE);
 
                      }).build());
 
@@ -55,6 +63,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BISMUTH_TRAPDOOR);
 
                         output.accept(ModBlocks.BISMUTH_LAMP);
+
 
 
 
