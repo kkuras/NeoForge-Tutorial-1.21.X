@@ -3,6 +3,7 @@ package net.kkura.tutorialmod.item;
 import net.kkura.tutorialmod.TutorialMod;
 import net.kkura.tutorialmod.item.custom.ChiselItem;
 import net.kkura.tutorialmod.item.custom.FuelItem;
+import net.kkura.tutorialmod.item.custom.HammerItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -52,6 +53,10 @@ public class ModItems {
     public static final DeferredItem<HoeItem> BISMUTH_HOE = ITEMS.register("bismuth_hoe",
             () -> new HoeItem(ModToolTiers.BISMUTH, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.BISMUTH, 0F, -3.0f))));
+
+    public static final DeferredItem<HammerItem> BISMUTH_HAMMER = ITEMS.register("bismuth_hammer",
+            () -> new HammerItem(ModToolTiers.BISMUTH, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.BISMUTH, 7F, -3.5F))));
 
 
     public static void register(IEventBus eventBus) {
