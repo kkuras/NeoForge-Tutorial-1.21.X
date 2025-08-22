@@ -4,6 +4,7 @@ import net.kkura.tutorialmod.block.ModBlocks;
 import net.kkura.tutorialmod.component.ModDataComponents;
 import net.kkura.tutorialmod.item.ModCreativeModeTabs;
 import net.kkura.tutorialmod.item.ModItems;
+import net.kkura.tutorialmod.sound.ModSounds;
 import net.kkura.tutorialmod.util.ModItemProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -47,6 +48,7 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponents.register(modEventBus);
+        ModSounds.register(modEventBus);
 
 
 

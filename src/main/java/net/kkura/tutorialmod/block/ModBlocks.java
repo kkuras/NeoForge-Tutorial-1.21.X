@@ -5,6 +5,7 @@ import net.kkura.tutorialmod.block.custom.BismuthLampBlock;
 import net.kkura.tutorialmod.block.custom.ControlerBlock;
 import net.kkura.tutorialmod.block.custom.MagicBlock;
 import net.kkura.tutorialmod.item.ModItems;
+import net.kkura.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -33,7 +34,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
     public static final DeferredBlock<Block> CONTROLER = registerBlock("controler",
             () -> new ControlerBlock(BlockBehaviour.Properties.of().strength(5.0f).noLootTable()));
 
