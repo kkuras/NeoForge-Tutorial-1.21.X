@@ -1,5 +1,6 @@
 package net.kkura.tutorialmod;
 
+import net.kkura.effect.ModEffects;
 import net.kkura.tutorialmod.block.ModBlocks;
 import net.kkura.tutorialmod.component.ModDataComponents;
 import net.kkura.tutorialmod.item.ModCreativeModeTabs;
@@ -49,6 +50,7 @@ public class TutorialMod {
 
         ModDataComponents.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEffects.register(modEventBus);
 
 
 
