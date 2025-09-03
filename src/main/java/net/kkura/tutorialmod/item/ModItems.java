@@ -5,6 +5,7 @@ import net.kkura.tutorialmod.item.custom.ChiselItem;
 import net.kkura.tutorialmod.item.custom.FuelItem;
 import net.kkura.tutorialmod.item.custom.HammerItem;
 import net.kkura.tutorialmod.item.custom.ModArmorItem;
+import net.kkura.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -83,6 +84,9 @@ public class ModItems {
 
     public static final DeferredItem<BowItem> KAUPEN_BOW = ITEMS.register("kaupen_bow",
             () -> new BowItem(new Item.Properties().durability(500)));
+
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
 
 

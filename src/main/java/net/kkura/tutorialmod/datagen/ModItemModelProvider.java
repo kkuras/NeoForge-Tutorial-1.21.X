@@ -50,6 +50,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         // basicItem(ModItems.CHISEL.get());
 
+
         basicItem(ModItems.RADISH.get());
 
         basicItem(ModItems.STARLIGHT_ASHES.get());
@@ -79,7 +80,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BISMUTH_HORSE_ARMOR.get());
 
         basicItem(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
-
+        basicItem(ModItems.BAR_BRAWL_MUSIC_DISC.get());
     }
 
     // Shoutout to El_Redstoniano for making this
