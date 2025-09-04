@@ -1,13 +1,13 @@
 package net.kkura.tutorialmod;
 
-import net.kkura.effect.ModEffects;
+import net.kkura.tutorialmod.effect.ModEffects;
 import net.kkura.tutorialmod.block.ModBlocks;
 import net.kkura.tutorialmod.component.ModDataComponents;
 import net.kkura.tutorialmod.item.ModCreativeModeTabs;
 import net.kkura.tutorialmod.item.ModItems;
+import net.kkura.tutorialmod.potion.ModPotion;
 import net.kkura.tutorialmod.sound.ModSounds;
 import net.kkura.tutorialmod.util.ModItemProperties;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -50,9 +50,9 @@ public class TutorialMod {
 
         ModDataComponents.register(modEventBus);
         ModSounds.register(modEventBus);
+
         ModEffects.register(modEventBus);
-
-
+        ModPotion.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
