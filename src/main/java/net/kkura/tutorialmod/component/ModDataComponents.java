@@ -11,7 +11,8 @@ import java.util.function.UnaryOperator;
 
 public class ModDataComponents {
 
-    public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES = DeferredRegister.createDataComponents(TutorialMod.MOD_ID);
+    public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES =
+            DeferredRegister.createDataComponents(TutorialMod.MOD_ID);
 
 
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<BlockPos>> COORDINATES = register("coordinates",
