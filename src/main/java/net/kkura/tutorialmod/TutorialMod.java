@@ -3,6 +3,7 @@ package net.kkura.tutorialmod;
 import net.kkura.tutorialmod.effect.ModEffects;
 import net.kkura.tutorialmod.block.ModBlocks;
 import net.kkura.tutorialmod.component.ModDataComponents;
+import net.kkura.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.kkura.tutorialmod.item.ModCreativeModeTabs;
 import net.kkura.tutorialmod.item.ModItems;
 import net.kkura.tutorialmod.potion.ModPotion;
@@ -53,6 +54,8 @@ public class TutorialMod {
 
         ModEffects.register(modEventBus);
         ModPotion.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
