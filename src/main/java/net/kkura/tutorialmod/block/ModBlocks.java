@@ -4,6 +4,7 @@ import net.kkura.tutorialmod.TutorialMod;
 import net.kkura.tutorialmod.block.custom.BismuthLampBlock;
 import net.kkura.tutorialmod.block.custom.ControlerBlock;
 import net.kkura.tutorialmod.block.custom.MagicBlock;
+import net.kkura.tutorialmod.block.custom.RadishCropBlock;
 import net.kkura.tutorialmod.item.ModItems;
 import net.kkura.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -66,6 +67,8 @@ public class ModBlocks {
             () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f)
                     .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register("radish_crop",
+            () -> new RadishCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
 
 

@@ -1,6 +1,7 @@
 package net.kkura.tutorialmod.item;
 
 import net.kkura.tutorialmod.TutorialMod;
+import net.kkura.tutorialmod.block.ModBlocks;
 import net.kkura.tutorialmod.item.custom.ChiselItem;
 import net.kkura.tutorialmod.item.custom.FuelItem;
 import net.kkura.tutorialmod.item.custom.HammerItem;
@@ -87,6 +88,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> RADISH_SEEDS = ITEMS.register("radish_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.RADISH_CROP.get(), new Item.Properties()));
 
 
 
