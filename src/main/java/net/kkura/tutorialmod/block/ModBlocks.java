@@ -1,10 +1,7 @@
 package net.kkura.tutorialmod.block;
 
 import net.kkura.tutorialmod.TutorialMod;
-import net.kkura.tutorialmod.block.custom.BismuthLampBlock;
-import net.kkura.tutorialmod.block.custom.ControlerBlock;
-import net.kkura.tutorialmod.block.custom.MagicBlock;
-import net.kkura.tutorialmod.block.custom.RadishCropBlock;
+import net.kkura.tutorialmod.block.custom.*;
 import net.kkura.tutorialmod.item.ModItems;
 import net.kkura.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -70,6 +67,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register("radish_crop",
             () -> new RadishCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
+    public static final DeferredBlock<Block> GOJI_BERRY_BUSH = BLOCKS.register("goji_berry_bush",
+            () -> new GojiBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
 
 
